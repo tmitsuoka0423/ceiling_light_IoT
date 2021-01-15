@@ -14,7 +14,7 @@ const char* writeKey = ""; // Ambientのライトキー
 void setup() {
     M5.begin(true, false, true);
     M5.dis.setBrightness(10);  // >= 3
-    M5.dis.drawpix(0, 0x000000);  // 初期LED: 黒
+    M5.dis.drawpix(0, 0x0000ff);  // 初期LED: 青
     Serial.begin(115200);
     ambient.begin(channelId, writeKey, &client); // チャネルIDとライトキーを指定してAmbientの初期化
 }
